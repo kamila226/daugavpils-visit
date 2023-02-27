@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    /*text-align: center;*/
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    margin: 0;
+    background-color: #49CD96;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#menu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 950px;
+}
+
+.menu-item {
+    margin: 0 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#top-section {
+    background-image: url("images/daugavpils.png");
+    background-size: cover;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+#top-text {
+    height: 500px;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+h1 {
+    display: block;
+    margin: 0;
+    color: white;
+    font-size: 60px;
+}
+
+#visit-daugavpils {
+    margin: 0;
+    background: black;
+    text-align: left;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+#description {
+    margin-left: 50px;
+    text-align: left;
+    background: #49CD96;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.section {
+    max-width: 950px;
+    margin: 60px auto 100px auto;
+}
+
+.section-name {
+    font-size: 50px;
+    font-family: 'Tilt Warp', cursive;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-description {
+    font-size: 20px;
+    background: #49CD96;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.places-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.places-link {
+    position: relative;
+    text-align: center;
+}
+
+.overlay-round {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+.background {
+    background: black;
+    border-radius: 50%;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.overlay-round:hover {
+    opacity: 1;
+}
+
+.button {
+    z-index: 2;
+    position: relative;
+    background: #49CD96;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cafes-items {
+    margin: 60px 0 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cafes-item {
+    position: relative;
+}
+.cafes-img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+/*
+.caffe-link {
+    height: 0;
+}*/
+
+.overlay {
+    position: absolute;
+    background: black;
+    opacity: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: opacity 0.5s;
+}
+
+.overlay:hover {
+    opacity: 0.8;
+}
+
+.caffe-name {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.caffe-description {
+    font-size: 18px;
+    margin: 15px;
+}
+
+.places-item {
+    text-align: center;
+    max-width: 230px;
+}
+
+.places-item-description {
+    font-size: 18px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-for {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#card {
+    background: #49CD96;
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px;
+    border-bottom: 8px solid #8FFBCE;
+    border-top: 8px solid #8FFBCE;
+}
+
+#contact-organisation {
+    font-size: 28px;
+}
+
+#contact-info {
+    margin: 0 auto 20px auto;
+}
+
+table {
+    font-size: 20px;
+}
+
+.category {
+    width: 180px;
+    height: 30px;
+}
+
+#contacts-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 60px 0 40px 0;
+}
+
+#card a {
+    color: white;
+}
+.heading {
+    display: block;
+}
+
+.line-left,
+.line-right {
+    position: relative;
+    height: 3px;
+    width: 300px;
+    background: #49CD96;
+}
+
+.line-right {
+    float: right;
+    right: 140px;
+    animation-name: right-to-center;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.line-left {
+    left: 140px;
+    animation-name: left-to-center;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes left-to-center{
+    0% {left: 0}
+    20% {left: -50px}
+    70% {left: 200px}
+    100% {left: 140px}
+}
+
+@keyframes right-to-center {
+    0% {right: 0}
+    20% {right: -50px}
+    70% {right: 200px}
+    100% {right: 140px}
+}
+
+
+
+footer {
+    background: black;
+    color: white;
+    margin: 0;
+    height: 80px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
